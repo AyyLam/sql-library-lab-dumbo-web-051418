@@ -1,1 +1,5 @@
-UPDATE characters SET species = "Martian" ORDER BY characters.id DESC LIMIT 1; 
+UPDATE characters
+SET species = 'Martian'
+WHERE id > 0
+ORDER BY id DESC
+LIMIT 1;
