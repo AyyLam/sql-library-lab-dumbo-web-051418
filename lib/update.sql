@@ -1,4 +1,4 @@
 UPDATE characters
 SET species = 'Martian'
-ORDER BY id DESC
+WHERE id = MAX(id)
 LIMIT 1;
