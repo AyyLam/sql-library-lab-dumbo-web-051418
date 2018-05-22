@@ -1,3 +1,4 @@
 UPDATE characters
 SET species = 'Martian'
-WHERE id = MAX(id);
+GROUP BY id DESC 
+LIMIT 1; 
